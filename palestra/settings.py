@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%r+z)9kzy)w%@y)w8o4bt!&j3%lhsceg^p5(^i9xyqn89ok0r@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'RUNNING_EBS' not in os.environ
 
 ALLOWED_HOSTS = ['localhost', 'palestra-ebs.us-east-1.elasticbeanstalk.com']
 
